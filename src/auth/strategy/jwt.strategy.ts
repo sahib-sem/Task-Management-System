@@ -22,7 +22,7 @@ export class JwtStrategy extends PassportStrategy(Strategy){
     }
     
     async validate(payload:any , request:Request){
-        console.log(payload)
+
         
         if (!payload){
             throw new UnauthorizedException()

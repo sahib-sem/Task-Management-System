@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="cart page of my shoe selling website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="login">
+        <div class="login-img-container">
+            <h1>#Welcome back</h1>
+        </div>
+        <nav>
+            <ul class="login-navigation">
+                <li class="login-navigation__item"><a href="login.html" aria-label="open login page" class="login-navigation__item__link login-navigation__item__link--active">Login</a></li>
+                <li class="login-navigation__item"><a class="login-navigation__item__link" href="signup.html" aria-label="open sign Up page">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="error-auth-msg">
+        
+        </div>
+        <form class="login-form" id="form">
+            <div class="input-control">
+                <label for="email"><span class="visually-hidden">Label for the input</span></label>
+                <input type="text" id="email" placeholder="Email..." class="login-form__input">
+                <div class="error"></div>
+            </div>
+
+            <div class="input-control">
+                <label for="password"><span class="visually-hidden">Label for the input</span></label>
+            
+                <input type="password" id="password" placeholder="Password" class="login-form__input">
+                <div class="error"></div>
+            </div>
+
+            
+
+            <button class="btn login_form__button">Login</button>
+            <a href="signup.html" class="signup-page-btn-link"><button type="button" class="btn login_form__button">Create account</button></a>
+        </form>
+    </section>
+    <script src='./js/login.js'></script>
+</body>
+</html>

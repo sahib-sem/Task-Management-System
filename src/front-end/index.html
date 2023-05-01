@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task-manager.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Task Manager</h3>
+            <button class="btn addTask">Add Task</button>
+        </header>
+        <div class="task-wraper">
+            <div class="task">
+                <div class="task-container">
+                    <div class="task-detail">
+                        <h4 id="title">Title</h4>
+                        <p id="description">description of the task</p>
+                        <p id="duedate">2017-06-01</p>
+                    </div>
+                    <div class="button-container">
+                        <button class="btn2 done">done</button>
+                        <button class="btn2 edit">edit</button>
+                        <button class="btn2 delete">delete</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <section class="modal hidden add-modal">
+        <div class="flex">
+          <p>Add task</p>
+          <button class="btn-close-add">⨉</button>
+        </div>
+        <input type="text" id="title-modal" placeholder="title" />
+        <input type="description" id="description-modal" placeholder="description" />
+        <input type="date" id="duedate-modal" />
+        <button class="btn-modal add-submit">Submit</button>
+    </section>
+    <section class="modal hidden edit-modal">
+        <div class="flex">
+          <p>Add task</p>
+          <button class="btn-close-edit">⨉</button>
+        </div>
+        <input type="text" id="title-modal" placeholder="title" />
+        <input type="description" id="description-modal" placeholder="description" />
+        <input type="date" id="duedate-modal" />
+        <button class="btn-modal edit-submit">Submit</button>
+    </section>
+      
+</body>
+<script src="js/index.js" type = "module",></script>
+</html>

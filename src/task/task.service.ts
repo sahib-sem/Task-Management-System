@@ -1,4 +1,4 @@
-import { Injectable } from '@nestjs/common';
+import { BadRequestException, Injectable } from '@nestjs/common';
 import { CreateTaskDto } from './dto/create-task.dto';
 import { UpdateTaskDto } from './dto/update-task.dto';
 import { InjectRepository } from '@nestjs/typeorm';
@@ -27,10 +27,13 @@ export class TaskService {
   }
 
   findOne(id: number) {
-    return this.repo.findOneBy({id});
+    return this.repo.findOneBy({id})
   }
 
   update(id: number, updateTaskDto: UpdateTaskDto) {
+    if (Object.keys(updateTaskDto).length === 0 && updateTaskDto.constructor === Object){
+      throw new BadRequestException('at least one field must be provided')
+    }
     return this.repo.update(id, updateTaskDto);
   }
 
