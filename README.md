@@ -1,4 +1,4 @@
-## Installation
+## Installation (install all dependancies)
 
 ```bash
 $ npm install
