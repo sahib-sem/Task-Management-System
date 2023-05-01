@@ -6,9 +6,9 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 @Module({
   imports: [TaskModule, AuthModule , TypeOrmModule.forRoot({
     type: 'mysql', 
-    username: 'root',
-    password:'s1a2h3i4b5',
-    database:'task_management_system',
+    username: 'YOUR USERNAME',
+    password:'YOUR PASSWORD',
+    database:'YOUR DATABASE',
     autoLoadEntities:true,
     synchronize:true,
     port:3306,
