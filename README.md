@@ -39,6 +39,7 @@ $ npm run start
 
 ```bash
 # the app has three pages - login , sing up and task management page
-# you can first sign up and then login this will take you to the main page of the application where you can manage your task 
+# you can first sign up and then login 
+# this will take you to the main page of the application where you can manage your task 
 ```
 
